@@ -1,9 +1,29 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { RevealOnScroll } from './RevealOnScroll'
 import { motion } from "motion/react"
 import emailjs from 'emailjs-com'
 
+const SERVICE_ID = "service_263aqn8";
+const TEMPLATE_ID = "template_rt8vu3e";
+const PUBLIC_KEY = "8J0cxtdeRzy6EBLeP";
+
 export const Contact = () => {
+    const [formData, setFormData] = useState({
+        name: "",
+        email: "",
+        message: "",
+    });
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, PUBLIC_KEY)
+            .then(() => {
+                alert("Message sent!");
+                setFormData({ name: "", email: "", message: "" });
+            })
+            .catch(() => alert("Something went wrong, please try again!"));
+    };
+
     return (
         <div className='min-h-screen flex items-center justify-center pb-20'>
             <RevealOnScroll>
@@ -16,7 +36,7 @@ export const Contact = () => {
                         <h2 className='font-bold text-3xl'>Get In <span className='text-yellow-400'>Touch</span></h2>
                     </motion.div>
                     <motion.form
-                        action=""
+                        onSubmit={handleSubmit}
                         className='space-y-6'
                         initial={{ scale: 0.8, opacity: 0 }}
                         whileInView={{ scale: 1, opacity: 1 }}
@@ -26,6 +46,9 @@ export const Contact = () => {
                                 type="text"
                                 id="name"
                                 name="name"
+                                required
+                                value={formData.name}
+                                onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                                 placeholder='your name'
                                 className='w-full bg-white/5 border border-white/10 rounded px-4 py-3 text-white transition focus:outline-none focus:border-yellow-500 focus:bg-yellow-500/2' />
                         </div>
@@ -34,6 +57,9 @@ export const Contact = () => {
                                 type="text"
                                 id="email"
                                 name="email"
+                                required
+                                value={formData.email}
+                                onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                                 placeholder='example@gmail.com'
                                 className='w-full bg-white/5 border border-white/10 rounded px-4 py-3 text-white transition focus:outline-none focus:border-yellow-500 focus:bg-yellow-500/2' />
                         </div>
@@ -42,10 +68,11 @@ export const Contact = () => {
                                 id="message"
                                 name="message"
                                 required
+                                value={formData.message}
+                                onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                                 rows={5}
                                 className="w-full bg-white/5 border border-white/10 rounded px-4 py-3 text-white transition focus:outline-none focus:border-yellow-500 focus:bg-yellow-500/2"
                                 placeholder="Your Message..."
-
                             />
                         </div>
 
@@ -53,14 +80,15 @@ export const Contact = () => {
                             initial={{ scale: 0.8, opacity: 0 }}
                             whileInView={{ scale: 1, opacity: 1 }}
                             transition={{ delay: 0.4, duration: 0.7 }}>
-                            <button className='w-full bg-yellow-500 text-black py-3 px-6 rounded font-medium transition relative overflow-hidden hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59,130,246,0.4)'>Send Message</button>
-
+                            <button
+                                type="submit"
+                                className='w-full bg-yellow-500 text-black py-3 px-6 rounded font-medium transition relative overflow-hidden hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59,130,246,0.4)]'>
+                                Send Message
+                            </button>
                         </motion.div>
                     </motion.form>
-
-
                 </div>
             </RevealOnScroll>
         </div>
-    )
-}
+    );
+};

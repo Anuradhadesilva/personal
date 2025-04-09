@@ -1,5 +1,5 @@
 import React from 'react'
-import profilePic from "../assets/raviKumarProfile.webp"
+import profilePic from "../assets/profile.png"
 import { FaGithub, FaLinkedin, FaInstagram } from 'react-icons/fa';
 import { HERO_CONTENT } from '../constants'
 import { RevealOnScroll } from './RevealOnScroll';
@@ -22,7 +22,7 @@ export const Hero = () => {
                             <motion.img
                                 src={profilePic}
                                 alt=""
-                                className='border border-stone-800 rounded-3xl'
+                                className='border border-stone-800 rounded-3xl w-[640px]'
                                 initial={{ scale: 0.8, opacity: 0 }}
                                 transition={{ delay: 0.4, duration: 0.6 }}
                                 whileInView={{ scale: 1, opacity: 1 }}
@@ -74,13 +74,13 @@ export const Hero = () => {
                                 transition={{ duration: 0.7 }}
                                 whileInView={{ x: 0, opacity: 1 }}
                             >
-                                <a href="https://github.com" target="_blank" rel="noopener noreferrer" className='transform transition-all duration-300 hover:scale-150 hover:shadow-2xl hover:text-yellow-400'>
+                                <a href="https://github.com/Anuradhadesilva" target="_blank" rel="noopener noreferrer" className='transform transition-all duration-300 hover:scale-150 hover:shadow-2xl hover:text-yellow-400'>
                                     <FaGithub className="text-3xl" />
                                 </a>
-                                <a href="#" target='_blank' rel="noopener noreferrer" className='transform transition-all duration-200 hover:scale-150 hover:shadow-xl hover:text-yellow-400' >
+                                <a href="https://www.linkedin.com/in/anuradha-shashimal-657885231/" target='_blank' rel="noopener noreferrer" className='transform transition-all duration-200 hover:scale-150 hover:shadow-xl hover:text-yellow-400' >
                                     <FaLinkedin className='text-3xl' />
                                 </a>
-                                <a href="#" target='_blank' rel="noopener noreferrer" className='transform transition-all duration-200 hover:scale-150 hover:shadow-xl hover:text-yellow-400'>
+                                <a href="https://www.instagram.com/anuradha_desilva_" target='_blank' rel="noopener noreferrer" className='transform transition-all duration-200 hover:scale-150 hover:shadow-xl hover:text-yellow-400'>
                                     <FaInstagram className='text-3xl' />
                                 </a>
                             </motion.div>
@@ -89,11 +89,12 @@ export const Hero = () => {
                             <motion.div
                                 className='pt-6'
                                 initial={{ opacity: 0, scale: 0.9 }}
-                                transition={{ delay: 0.8, duration: 0.5 }}
+                                transition={{ delay: 0.4, duration: 0.6 }}
                                 whileInView={{ scale: 1, opacity: 1 }}
                             >
                                 <a
-                                    href="#"
+                                    href="https://drive.google.com/file/d/1FXoGKe-vEpVdmb_B7GvjV1lkZJ5QO63c/view?usp=sharing"
+                                    target='_black'
                                     className="inline-block bg-yellow-400 text-black px-6 py-3 rounded-lg font-semibold 
                   transition-transform transform duration-300 hover:scale-110 hover:shadow-lg"
                                 >

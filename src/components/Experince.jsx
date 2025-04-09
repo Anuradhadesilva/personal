@@ -11,7 +11,7 @@ export const Experince = () => {
                     whileInView={{ y: 0, opacity: 1 }}
                     transition={{ duration: 0.7 }}
                     className='flex justify-center mt-10'>
-                    <h2 className='text-3xl font-bold text-white drop-shadow-[0_4px_2px_rgba(234,179,8,0.6)]'>
+                    <h2 className='text-3xl font-bold '>
                         Experience
                     </h2>
                 </motion.div>

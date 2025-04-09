@@ -1,5 +1,5 @@
 import React from 'react'
-import profilePic from "../assets/raviKumarProfile.webp"
+import profilePic from "../assets/profile.png"
 import { FaReact, FaJava, FaHtml5, FaCss3Alt, FaJs, FaDatabase, FaSwift } from "react-icons/fa";
 import { SiMysql, SiSpring } from "react-icons/si";
 import { IoLogoFirebase } from "react-icons/io5";
@@ -47,7 +47,7 @@ export const Aboutme = () => {
                             <motion.img
                                 src={profilePic}
                                 alt="Profile"
-                                className="border border-stone-800 rounded-3xl"
+                                className="border border-stone-800 rounded-3xl w-[640px]"
                                 initial={{ scale: 0.8, opacity: 0 }}
                                 whileInView={{ scale: 1, opacity: 1 }}
                                 transition={{ delay: 0.4, duration: 0.6 }}

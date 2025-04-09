@@ -30,7 +30,7 @@ export const Navbar = () => {
                             <a
                                 key={item.name}
                                 href={item.path}
-                                className="hover:text-yellow-500 transition"
+                                className="hover:text-yellow-500 transition font-semibold"
                             >
                                 {item.name}
                             </a>
@@ -45,7 +45,7 @@ export const Navbar = () => {
             </nav>
 
             {/* Slide-in Mobile Menu */}
-            <div className={`fixed top-0 right-0 h-full w-[70%] max-w-xs bg-neutral-900 z-50 transform transition-transform duration-300 ease-in-out ${touchMenu ? "translate-x-0" : "translate-x-full"
+            <div className={`fixed md:hidden top-0 right-0 h-full w-[70%] max-w-xs bg-neutral-900 z-50 transform transition-transform duration-300 ease-in-out ${touchMenu ? "translate-x-0" : "translate-x-full"
                 }`}>
                 <div className='flex justify-between px-6 py-4 border-b border-stone-800'>
                     <h2 className='text-lg'>Menu</h2>
@@ -57,7 +57,7 @@ export const Navbar = () => {
                             <a
                                 key={item.name}
                                 href={`${item.path}`}
-                                className='text-lg hover:text-yellow-400'>
+                                className='text-lg hover:text-yellow-400 '>
                                 {item.name}
                             </a>
                         ))
