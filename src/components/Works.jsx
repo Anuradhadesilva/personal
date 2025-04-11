@@ -4,6 +4,7 @@ import { FaReact, FaJava, FaHtml5, FaCss3Alt, FaJs, FaDatabase, FaSwift } from "
 import { IoLogoFirebase } from 'react-icons/io5';
 import { RiTailwindCssFill } from "react-icons/ri";
 import { SiMysql, SiSpring } from "react-icons/si";
+import { TbBrandReactNative } from "react-icons/tb";
 import { MdAttachEmail } from "react-icons/md";
 import { RevealOnScroll } from './RevealOnScroll';
 import { motion } from "motion/react"
@@ -19,16 +20,19 @@ export const Works = () => {
         RiTailwindCssFill: { icon: RiTailwindCssFill, color: "text-blue-400" },
         SiSpring: { icon: SiSpring, color: "text-green-600" },
         MdAttachEmail: { icon: MdAttachEmail, color: "text-red-600" },
+        TbBrandReactNative: { icon: TbBrandReactNative, color: "text-blue-600" },
+        FaSwift: { icon: FaSwift, color: "text-orange-600" },
+        FaSwift1: { icon: FaSwift, color: "text-blue-500" },
+
     };
     return (
         <div className='min-h-screen pb-4 lg:mb-30'>
             <RevealOnScroll>
                 <motion.div
                     initial={{ y: -100, opacity: 0 }}
-                    animate={{ y: 0, opacity: 1 }}
-                    whileInView={{ x: 0, opacity: 1 }}
+                    whileInView={{ y: 0, opacity: 1 }}
                     transition={{ duration: 0.7 }}
-                    className='flex justify-center text-3xl font-bold mb-10 '>
+                    className='flex justify-center text-3xl font-bold mb-12 '>
                     <h2>
                         Projects
                     </h2>
@@ -50,19 +54,21 @@ export const Works = () => {
                                 initial={{ x: -100, opacity: 0 }}
                                 whileInView={{ x: 0, opacity: 1 }}
                                 transition={{ duration: 0.7 }}
+                                viewport={{ once: true, amount: 0.3 }}
                                 className='w-full lg:w-1/2 '>
                                 <div className='flex justify-center lg:justify-end lg:mr-10'>
                                     <img
                                         src={project.image}
                                         width={200}
                                         alt={project.title}
-                                        className='mb-6 rounded-lg h-[200px] shadow-lg' />
+                                        className='mb-6 rounded-lg h-[200px] shadow-lg border border-stone-500' />
                                 </div>
                             </motion.div>
                             <motion.div
                                 initial={{ x: 100, opacity: 0 }}
                                 whileInView={{ x: 0, opacity: 1 }}
                                 transition={{ duration: 0.7 }}
+                                viewport={{ once: true, amount: 0.3 }}
                                 className='w-full lg:w-1/2'>
                                 <div className='flex flex-col justify-center lg:items-start items-center px-6 max-w-[500px]'>
                                     <h2 className='text-lg font-bold mb-2 '>{project.title}</h2>

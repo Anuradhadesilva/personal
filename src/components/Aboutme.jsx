@@ -1,6 +1,8 @@
 import React from 'react'
 import profilePic from "../assets/profile.png"
 import { FaReact, FaJava, FaHtml5, FaCss3Alt, FaJs, FaDatabase, FaSwift } from "react-icons/fa";
+import { MdAttachEmail } from "react-icons/md";
+import { RiTailwindCssFill } from "react-icons/ri";
 import { SiMysql, SiSpring } from "react-icons/si";
 import { IoLogoFirebase } from "react-icons/io5";
 import { TbBrandReactNative } from "react-icons/tb";
@@ -41,6 +43,7 @@ export const Aboutme = () => {
                         initial={{ x: -100, opacity: 0 }}
                         whileInView={{ x: 0, opacity: 1 }}
                         transition={{ duration: 0.7 }}
+                        viewport={{ once: true, amount: 0.3 }}
                         className="w-full lg:w-1/2 p-6"
                     >
                         <div className="flex justify-center">
@@ -60,12 +63,14 @@ export const Aboutme = () => {
                         className="w-full lg:w-1/2 flex justify-center lg:justify-start items-center px-10"
                         initial={{ x: 100, opacity: 0 }}
                         whileInView={{ x: 0, opacity: 1 }}
+                        viewport={{ once: true, amount: 0.3 }}
                         transition={{ duration: 0.7 }}
                     >
                         <motion.div
                             className="flex flex-col items-center lg:items-start space-y-2"
                             initial="initial"
                             whileInView="animate"
+                            viewport={{ once: true, amount: 0.3 }}
                             variants={containerVariants}
                         >
                             <motion.h2
@@ -81,6 +86,7 @@ export const Aboutme = () => {
                                 initial={{ y: -30, opacity: 0 }}
                                 whileInView={{ y: 0, opacity: 1 }}
                                 transition={{ duration: 0.6 }}
+                                viewport={{ once: true, amount: 0.3 }}
                                 className="text-xl font-bold pt-6"
                             >
                                 Hello, I am Anuradha
@@ -90,6 +96,7 @@ export const Aboutme = () => {
                                 initial={{ y: -30, opacity: 0 }}
                                 whileInView={{ y: 0, opacity: 1 }}
                                 transition={{ delay: 0.2, duration: 0.6 }}
+                                viewport={{ once: true, amount: 0.3 }}
                                 className="w-full text-justify pt-2"
                             >
                                 {ABOUT_TEXT}

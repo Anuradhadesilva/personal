@@ -31,6 +31,7 @@ export const Contact = () => {
                     <motion.div
                         initial={{ y: -100, opacity: 0 }}
                         whileInView={{ y: 0, opacity: 1 }}
+                        viewport={{ once: true, amount: 0.3 }}
                         transition={{ duration: 0.7 }}
                         className='mb-10 items-center justify-center text-center'>
                         <h2 className='font-bold text-3xl'>Get In <span className='text-yellow-400'>Touch</span></h2>
@@ -40,6 +41,7 @@ export const Contact = () => {
                         className='space-y-6'
                         initial={{ scale: 0.8, opacity: 0 }}
                         whileInView={{ scale: 1, opacity: 1 }}
+                        viewport={{ once: true, amount: 0.3 }}
                         transition={{ duration: 0.7 }}>
                         <div className='relative'>
                             <input
@@ -79,6 +81,7 @@ export const Contact = () => {
                         <motion.div
                             initial={{ scale: 0.8, opacity: 0 }}
                             whileInView={{ scale: 1, opacity: 1 }}
+                            viewport={{ once: true, amount: 0.3 }}
                             transition={{ delay: 0.4, duration: 0.7 }}>
                             <button
                                 type="submit"

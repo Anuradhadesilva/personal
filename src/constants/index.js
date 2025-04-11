@@ -56,6 +56,14 @@ export const PROJECTS = [
     link: "https://github.com/Anuradhadesilva/AppleMart"
   },
   {
+    title: "health_and_fitness_tracking_system",
+    image: project2,
+    description:
+      "An application for managing tasks and projects, with features such as task creation, assignment, and progress tracking.",
+    technologies: ["TbBrandReactNative", "FaCss3Alt", "SiSpring", , "SiMysql"],
+    link: "https://github.com/Anuradhadesilva/health_and_fitness_tracking_system"
+  },
+  {
     title: "Portfolio Website",
     image: project3,
     description:
@@ -68,7 +76,7 @@ export const PROJECTS = [
     image: project4,
     description:
       "A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.",
-    technologies: ["FaHtml5", "FaCss3Alt", "FaReact", , "IoLogoFirebase"],
+    technologies: ["FaSwift", "FaSwift1", "FaReact", , "IoLogoFirebase"],
     link: "https://github.com/Anuradhadesilva/Airbnb_SwiftUI"
   },
 ];

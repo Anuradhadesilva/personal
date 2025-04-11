@@ -30,6 +30,7 @@ export const Experince = () => {
                             initial={{ x: 100, opacity: 0 }}
                             whileInView={{ x: 0, opacity: 1 }}
                             transition={{ duration: 0.7 }}
+                            viewport={{ once: true, amount: 0.3 }}
                             className='flex flex-col items-center lg:items-start text-justify px-10 space-y-2'>
                             <motion.h2
                                 initial={{ y: -30, opacity: 0 }}
@@ -43,6 +44,7 @@ export const Experince = () => {
                                 className='text-xs lg:text-base py-1 text-gray-300'
                                 initial={{ y: -20, opacity: 0 }}
                                 whileInView={{ y: 0, opacity: 1 }}
+                                viewport={{ once: true, amount: 0.3 }}
                                 transition={{ duration: 0.6 }}>
                                 During my internship at 4 Axis Solutions, I gained hands-on experience in iOS development using Swift,
                                 SwiftUI, and UIKit frameworks.
@@ -51,6 +53,7 @@ export const Experince = () => {
                                 className='text-xs lg:text-base py-1 text-gray-300'
                                 initial={{ y: -20, opacity: 0 }}
                                 whileInView={{ y: 0, opacity: 1 }}
+                                viewport={{ once: true, amount: 0.3 }}
                                 transition={{ duration: 0.6 }}>
                                 I contributed to projects such as AI Photo Editor, ArtSpace, and Cologram, where I played a key role in developing subscription management systems, secure Firebase Authentication, and advanced export functionalities.
                             </motion.li>
@@ -58,6 +61,7 @@ export const Experince = () => {
                                 className='text-xs lg:text-base py-1 text-gray-300'
                                 initial={{ y: -20, opacity: 0 }}
                                 whileInView={{ y: 0, opacity: 1 }}
+                                viewport={{ once: true, amount: 0.3 }}
                                 transition={{ duration: 0.6 }}>
                                 I integrated Firebase Firestore & Cloud Functions to ensure seamless backend operations and conducted A/B testing for performance optimization.
                             </motion.li>
@@ -65,6 +69,7 @@ export const Experince = () => {
                                 className='text-xs lg:text-base py-1 text-gray-300'
                                 initial={{ y: -20, opacity: 0 }}
                                 whileInView={{ y: 0, opacity: 1 }}
+                                viewport={{ once: true, amount: 0.3 }}
                                 transition={{ duration: 0.6 }}>
                                 Additionally, I collaborated effectively using Git and Bitbucket to maintain efficient development workflows.
                             </motion.li>
