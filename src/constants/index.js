@@ -3,7 +3,7 @@ import project2 from "../assets/projects/applemart.png";
 import project3 from "../assets/projects/portfolio.png";
 import project4 from "../assets/projects/airbnb.png";
 
-export const HERO_CONTENT = `I am a passionate full stack developer with a knack for crafting robust and scalable web applications. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.`;
+export const HERO_CONTENT = `I'm a passionate full stack developer focused on delivering efficient, user-centered solutions through thoughtful and innovative development.`;
 
 export const ABOUT_TEXT = `An IT undergraduate student passionate about technology and its endless possibilities. With a strong foundation in programming and problem-solving, I'm constantly seeking opportunities to learn and grow in this ever-evolving field. Through my portfolio, I aim to showcase my skills, projects, and the enthusiasm I bring to every task. Let's connect and explore how we can make a meaningful impact together.`;
 
