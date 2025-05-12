@@ -2,6 +2,7 @@ import project1 from "../assets/projects/onlineOrder.png";
 import project2 from "../assets/projects/applemart.png";
 import project3 from "../assets/projects/portfolio.png";
 import project4 from "../assets/projects/airbnb.png";
+import project5 from "../assets/projects/WearNest.png";
 
 export const HERO_CONTENT = `I'm a passionate full stack developer focused on delivering efficient, user-centered solutions through thoughtful and innovative development.`;
 
@@ -56,12 +57,12 @@ export const PROJECTS = [
     link: "https://github.com/Anuradhadesilva/AppleMart"
   },
   {
-    title: "health_and_fitness_tracking_system",
-    image: project2,
+    title: "WearNest - Fashion Platform",
+    image: project5,
     description:
-      "An application for managing tasks and projects, with features such as task creation, assignment, and progress tracking.",
-    technologies: ["TbBrandReactNative", "FaCss3Alt", "SiSpring", , "SiMysql"],
-    link: "https://github.com/Anuradhadesilva/health_and_fitness_tracking_system"
+      "WearNext is a modern online clothing store for men, women, and kids. Users can browse products, select sizes, and add items to a shopping cart. Payments are processed securely through Stripe.",
+    technologies: ["FaReact", "RiTailwindCssFill", "SiSpring", , "SiMysql"],
+    link: "https://github.com/Anuradhadesilva/WearNest.git"
   },
   {
     title: "Portfolio Website",
